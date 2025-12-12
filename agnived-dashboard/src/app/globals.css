@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 210 40% 98%;
+    
+    --radius: 0.75rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+  }
+}
+
+@layer components {
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .panel-card {
+    border-radius: 1rem; /* rounded-2xl */
+    padding: 1.5rem;     /* p-6 */
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); /* shadow-xl */
+    border-width: 1px;   /* border */
+    background-color: #fff; /* bg-white */
+    border-color: #e5e7eb;  /* border-gray-200 */
+  }
+  .dark .panel-card {
+    background-color: #0f172a; /* dark:bg-slate-900 */
+    border-color: #1e293b;     /* dark:border-slate-800 */
+  }
+  
+  .stat-card {
+    padding: 1rem;         /* p-4 */
+    border-radius: 0.5rem; /* rounded-lg */
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 150ms; /* transition-colors */
+    background-color: #f9fafb; /* bg-gray-50 */
+  }
+  .stat-card:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+  }
+  .dark .stat-card {
+    background-color: #1e293b; /* dark:bg-slate-800 */
+  }
+  .dark .stat-card:hover {
+    background-color: #334155; /* dark:hover:bg-slate-700 */
+  }
+}
+
+/* Leaflet CSS fixes for dark mode */
+.dark .leaflet-container {
+  background: #0f172a;
+}
+
+.dark .leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.8);
+  color: #cbd5e1;
+}

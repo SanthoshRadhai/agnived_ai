@@ -1,0 +1,21 @@
+/* index.css - The only global styles you need */
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* The "Box Sizing" Reset - Essential for layouts to work mathematically correctly */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default browser margins */
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Matches your login bg */
+}

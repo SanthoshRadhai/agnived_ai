@@ -1,0 +1,210 @@
+{
+  "timestamp": "2025-11-19T17:35:46.616618",
+  "data_sources": {
+    "land_cover": "Google Dynamic World V1",
+    "hyperspectral": "Sentinel-2 SR Harmonized"
+  },
+  "resolution": "10m",
+  "date_range": {
+    "start": "2024-10-01",
+    "end": "2024-11-15"
+  },
+  "area_of_interest": {
+    "center": {
+      "latitude": 28.560278,
+      "longitude": 77.303778
+    },
+    "bounds": {
+      "west": 77.2732923652699,
+      "south": 28.533291774067024,
+      "east": 77.33436218885218,
+      "north": 28.58727459785447
+    },
+    "buffer_km": 3.0
+  },
+  "sentinel2_bands": {
+    "B1": {
+      "name": "Coastal Aerosol",
+      "wavelength": "443nm",
+      "resolution": 60
+    },
+    "B2": {
+      "name": "Blue",
+      "wavelength": "490nm",
+      "resolution": 10
+    },
+    "B3": {
+      "name": "Green",
+      "wavelength": "560nm",
+      "resolution": 10
+    },
+    "B4": {
+      "name": "Red",
+      "wavelength": "665nm",
+      "resolution": 10
+    },
+    "B5": {
+      "name": "Red Edge 1",
+      "wavelength": "705nm",
+      "resolution": 20
+    },
+    "B6": {
+      "name": "Red Edge 2",
+      "wavelength": "740nm",
+      "resolution": 20
+    },
+    "B7": {
+      "name": "Red Edge 3",
+      "wavelength": "783nm",
+      "resolution": 20
+    },
+    "B8": {
+      "name": "NIR",
+      "wavelength": "842nm",
+      "resolution": 10
+    },
+    "B8A": {
+      "name": "NIR Narrow",
+      "wavelength": "865nm",
+      "resolution": 20
+    },
+    "B9": {
+      "name": "Water Vapor",
+      "wavelength": "945nm",
+      "resolution": 60
+    },
+    "B11": {
+      "name": "SWIR 1",
+      "wavelength": "1610nm",
+      "resolution": 20
+    },
+    "B12": {
+      "name": "SWIR 2",
+      "wavelength": "2190nm",
+      "resolution": 20
+    }
+  },
+  "land_cover_statistics": {
+    "Water": {
+      "pixels": 69143.34901960791,
+      "area_km2": 6.914334901960791,
+      "percentage": 16.922995619528635,
+      "description": "Permanent and seasonal water bodies"
+    },
+    "Trees": {
+      "pixels": 67442.48627450984,
+      "area_km2": 6.744248627450984,
+      "percentage": 16.506705503518322,
+      "description": "Forests, tree plantations, orchards"
+    },
+    "Grass": {
+      "pixels": 2074,
+      "area_km2": 0.2074,
+      "percentage": 0.5076163277099739,
+      "description": "Natural grasslands, pastures, parks"
+    },
+    "Flooded Vegetation": {
+      "pixels": 7868.36078431373,
+      "area_km2": 0.786836078431373,
+      "percentage": 1.9257996173724714,
+      "description": "Mangroves, wetlands"
+    },
+    "Crops": {
+      "pixels": 12419.2862745098,
+      "area_km2": 1.24192862745098,
+      "percentage": 3.039649224419261,
+      "description": "Agricultural land, croplands"
+    },
+    "Shrub & Scrub": {
+      "pixels": 2014.380392156864,
+      "area_km2": 0.2014380392156864,
+      "percentage": 0.4930242899120754,
+      "description": "Shrublands, scrublands, bushes"
+    },
+    "Built Area": {
+      "pixels": 244100.56470587742,
+      "area_km2": 24.41005647058774,
+      "percentage": 59.74418141173017,
+      "description": "Urban, buildings, roads"
+    },
+    "Bare Ground": {
+      "pixels": 3513.870588235294,
+      "area_km2": 0.3513870588235294,
+      "percentage": 0.860028005809106,
+      "description": "Exposed soil, sand, rocks"
+    }
+  },
+  "agnived_mapping": {
+    "description": "Mapping from Dynamic World to AgniVed 7-class system",
+    "classes": {
+      "Dense Forest": [
+        1
+      ],
+      "Evergreen": [
+        1
+      ],
+      "Deciduous": [
+        1
+      ],
+      "Grassland": [
+        2
+      ],
+      "Shrubland": [
+        5
+      ],
+      "Agricultural": [
+        4
+      ],
+      "Barren": [
+        7
+      ]
+    }
+  },
+  "dynamic_world_classes": {
+    "0": {
+      "name": "Water",
+      "color": "#419BDF",
+      "description": "Permanent and seasonal water bodies"
+    },
+    "1": {
+      "name": "Trees",
+      "color": "#397D49",
+      "description": "Forests, tree plantations, orchards"
+    },
+    "2": {
+      "name": "Grass",
+      "color": "#88B053",
+      "description": "Natural grasslands, pastures, parks"
+    },
+    "3": {
+      "name": "Flooded Vegetation",
+      "color": "#7A87C6",
+      "description": "Mangroves, wetlands"
+    },
+    "4": {
+      "name": "Crops",
+      "color": "#E49635",
+      "description": "Agricultural land, croplands"
+    },
+    "5": {
+      "name": "Shrub & Scrub",
+      "color": "#DFC35A",
+      "description": "Shrublands, scrublands, bushes"
+    },
+    "6": {
+      "name": "Built Area",
+      "color": "#C4281B",
+      "description": "Urban, buildings, roads"
+    },
+    "7": {
+      "name": "Bare Ground",
+      "color": "#A59B8F",
+      "description": "Exposed soil, sand, rocks"
+    },
+    "8": {
+      "name": "Snow & Ice",
+      "color": "#B39FE1",
+      "description": "Snow cover, glaciers"
+    }
+  }
+}

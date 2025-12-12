@@ -1,0 +1,8 @@
+{
+  "found": false,
+  "message": "No imagery found in given area of interest.",
+  "lat": 28.5602787,
+  "lon": 77.29239823,
+  "area_of_interest_m": 100.0,
+  "min_distance_m": 10.0
+}

@@ -1,0 +1,42 @@
+{
+  "landcover": {
+    "sentinel2": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\sentinel2_hyperspectral.tif",
+    "classification": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\land_cover_classification.tif",
+    "probabilities": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\land_cover_probabilities.tif",
+    "visualization": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\agnived_cover_analysis.png",
+    "vegetation_mask": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\vegetation_mask.tif",
+    "metadata": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\LandcoverResults\\metadata.json"
+  },
+  "vegetation": {
+    "aoi": {
+      "lon": 77.29239823,
+      "lat": 28.5602787,
+      "buffer_km": 3.0
+    },
+    "cube_path": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\vegetation\\_tmp_bigearth_rdnet\\bigearth_s2_stack.tif",
+    "viz_path": "D:\\FullStack Projects\\Agnived\\Agnived_transfer\\Agnived_transfer\\Agnived\\GLYTCH'25\\PipeLine3.0\\vegetation\\Results\\bigearth_rdnet_s2_results.png",
+    "class_distribution": {
+      "Broad-leaved forest": 20.0,
+      "Inland waters": 76.0,
+      "Permanent crops": 4.0
+    },
+    "tile_counts": {
+      "Broad-leaved forest": 5,
+      "Inland waters": 19,
+      "Permanent crops": 1
+    },
+    "avg_confidence": 0.8087394833564758
+  },
+  "panos": {
+    "pano_result": {
+      "found": false,
+      "message": "No imagery found in given area of interest.",
+      "lat": 28.5602787,
+      "lon": 77.29239823,
+      "area_of_interest_m": 100.0,
+      "min_distance_m": 20.0
+    },
+    "detected_objects": [],
+    "classify_results": []
+  }
+}

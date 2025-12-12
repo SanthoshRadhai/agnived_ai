@@ -1,0 +1,88 @@
+{
+  "timestamp": "2025-11-24T12:26:14.857912",
+  "data_sources": {
+    "land_cover": "Google Dynamic World V1",
+    "hyperspectral": "Sentinel-2 SR Harmonized"
+  },
+  "resolution_m": 10,
+  "date_range": {
+    "start": "2024-10-01",
+    "end": "2024-11-15"
+  },
+  "aoi": {
+    "center_lon": 77.31423523899404,
+    "center_lat": 28.5371807740666,
+    "bounds": [
+      [
+        77.31423523899404,
+        28.5371807740666
+      ],
+      [
+        77.37530731905707,
+        28.5371807740666
+      ],
+      [
+        77.37530731905707,
+        28.591163597854468
+      ],
+      [
+        77.31423523899404,
+        28.591163597854468
+      ],
+      [
+        77.31423523899404,
+        28.5371807740666
+      ]
+    ]
+  },
+  "land_cover_statistics": {
+    "Water": {
+      "pixels": 14958,
+      "area_km2": 1.4958,
+      "percentage": 3.6539964823138558,
+      "description": "Permanent and seasonal water bodies"
+    },
+    "Trees": {
+      "pixels": 43667,
+      "area_km2": 4.3667,
+      "percentage": 10.667138948602696,
+      "description": "Forests, tree plantations, orchards"
+    },
+    "Grass": {
+      "pixels": 262,
+      "area_km2": 0.0262,
+      "percentage": 0.06400234512409615,
+      "description": "Natural grasslands, pastures, parks"
+    },
+    "Flooded Vegetation": {
+      "pixels": 77,
+      "area_km2": 0.0077,
+      "percentage": 0.01880984952120383,
+      "description": "Mangroves, wetlands"
+    },
+    "Crops": {
+      "pixels": 7589,
+      "area_km2": 0.7589,
+      "percentage": 1.8538694547586476,
+      "description": "Agricultural land, croplands"
+    },
+    "Shrub & Scrub": {
+      "pixels": 1050,
+      "area_km2": 0.10500000000000001,
+      "percentage": 0.25649794801641584,
+      "description": "Shrublands, scrublands, bushes"
+    },
+    "Built Area": {
+      "pixels": 338865,
+      "area_km2": 33.886500000000005,
+      "percentage": 82.77921633769787,
+      "description": "Urban, buildings, roads"
+    },
+    "Bare Ground": {
+      "pixels": 2892,
+      "area_km2": 0.2892,
+      "percentage": 0.706468633965214,
+      "description": "Exposed soil, sand, rocks"
+    }
+  }
+}
